@@ -1,0 +1,14 @@
+const int ledPins[] = {2, 3, 4, 5}; 
+const int buttonPins[] = {6, 7, 8, 9}; 
+const int buzzerPin = 10; 
+
+const int numLeds = 4;
+int sequence[numLeds];
+int correctCount = 0;
+
+unsigned long ledDisplayStartTime;
+unsigned long buttonPressStartTime;
+unsigned long currentMillis;
+
+int gameActive = 0; 
+int success = 0; 
